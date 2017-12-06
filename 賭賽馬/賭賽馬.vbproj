@@ -119,6 +119,42 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\09_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\09_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14_1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14_2.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
