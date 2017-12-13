@@ -13,12 +13,14 @@
                     {My.Resources._13_1, My.Resources._13_2},
                     {My.Resources._14_1, My.Resources._14_2}}
         horsepic = {PictureBox1, PictureBox2, PictureBox3, PictureBox4, PictureBox5, PictureBox6}
+        bet = {RadioButton1, RadioButton2, RadioButton3, RadioButton4, RadioButton5, RadioButton6}
         For i = 0 To 5
             horsepic(i).Left = 80
             horsepic(i).Top = 25 + 50 * i
             bet(i).Location = New Point(40, 35 + 50 * i)
-            bet(i).Text = i + i & "號"
+            bet(i).Text = i + 1 & "號"
         Next
+        Button2.Enabled = False
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
