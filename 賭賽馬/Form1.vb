@@ -32,8 +32,10 @@
             horsepic(i).Left += s
             If horsepic(i).Left + horsepic(i).Width >= LineShape2.X1 Then
                 Timer1.Enabled = False
-                msg = i + 1 & "號馬勝利"
+                msg = i + 1 & "號馬勝利" & vbCrLf
+                msg = msg & IIf(bet(i).Checked, "你賭贏了", "你賭輸了")
                 MsgBox(msg)
+                Button2.Enabled = True
                 Exit For
             End If
         Next
@@ -45,5 +47,15 @@
         h = 0
     End Sub
 
-
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim i As Integer
+        For i = 0 To 5
+            bet(i).Checked = False
+            bet(i).Enabled = True
+            horsepic(i).Left = 80
+            horsepic(i).Top = 25 + 50 * i
+        Next
+        Button1.Enabled = True
+        Button2.Enabled = False
+    End Sub
 End Class
